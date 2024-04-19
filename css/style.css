@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #edecec;
+}
+
+/* ESTILIZACAO DO NAVBAR */
+
+
+nav{
+    background: linear-gradient(to right, orange, #FFA500, #FFD700);
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    margin-left:  20px;
+    border: 1px solid black;
+}
+
+
+.nav-items{
+    margin-right: 20px;
+    width: 110px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 8px 12px;
+    border: 1px solid black;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, 0.5);
+}
+
+.nav-items:hover{
+    background-color: rgb(228, 226, 226);
+}
+
+/* AJUSTE NO CONTAINER POR CAUSA DE CONFLITO ENTRE O ASIDE E OS ITENS */
+
+.container {
+    display: flex;
+}
+
+/* ESTILIZACAO DO ASIDE */
+
+aside{
+    background: linear-gradient(to bottom, orange, #FFA500, #FFD700);
+    min-width: 200px;
+    padding: 20px;
+    box-sizing: border-box; 
+    display: flex; 
+    flex-direction: column;
+    height: 550px;
+    margin-top: 10px;
+    border: 1px solid black; 
+   
+}
+
+.aside-items{
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, 0.5);
+}
+
+.aside-items:hover{
+    background-color: rgb(228, 226, 226);
+}
+
+.aside-items a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.aside-items a:active{
+    color: orange;
+}
+
+/*ESTILIZACAO DOS ITENS*/
+
+.food-items{
+    background: linear-gradient(to right, #edecec, #FFD700);
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    padding: 10px; 
+    overflow-y: auto;
+    min-height: 650px;
+}
+
+.card-food{
+    background-color: white;
+    width: 200px; 
+    height: 200px;
+    margin: 10px; 
+    padding: 10px;
+    text-align: center;
+    box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, 0.5);
+}
+
+.card-food:hover{
+    background-color: rgb(228, 226, 226);
+    cursor: pointer;
+}
+
+
+.card-food img{
+    width: 150px; 
+    height: 150px;
+    object-fit: cover;
+    margin-top: 8px;
+    margin-bottom: 6px;
+    transition: transform 0.5s;
+}
+
+.card-food img:hover{
+    transform: scale(1.1);
+}
+
+/*  Utilizacao de PseudoElementos */
+
+.card-food p:first-child{
+    font-weight: bold;
+    color: black;
+}
+
+.card-food p:last-child{
+    color: rgb(69, 69, 69);
+}
+
+.card-food p:last-child:hover{
+    color: black;
+}
+
+
+/* ESTILIZACAO DO SCROLL */
+
+::-webkit-scrollbar {
+    visibility: hidden;
+}
